@@ -2,9 +2,8 @@ import org.jointheleague.graphical.robot.Robot;
 
 /*** Teacher's note ***/
 /*
- * Before beginning recipe: 1. ask students to find and explain the method in
- * this recipe. 2. ask students how they might use the method to make the
- * picture in the laminated hand-outs.
+ * Before beginning recipe: 1. ask students to find and explain the method in this recipe. 2. ask students how they
+ * might use the method to make the picture in the laminated hand-outs.
  */
 
 public class StarShow {
@@ -13,8 +12,8 @@ public class StarShow {
 
 	void makeStars() {
 
-		drawStar(150); // 5. delete this line. you will draw the star again in
-						// step 8.
+		// 5. delete this line. you will draw the star again in
+		// step 8.
 		// 13. Set the speed to 8
 		robot.setSpeed(8);
 		// 6. Make a variable to hold the X position of the Robot and set it to
@@ -50,9 +49,12 @@ public class StarShow {
 
 	private void drawStar(int starSize) {
 		// 2. Put the robot's pen down
-
+		robot.penDown();
 		// 4. Repeat both commands 5 times. See Figure 1 at
-
+		for (int i = 0; i < 5; i++) {
+			robot.move(starSize);
+			robot.turn(144);
+		}
 		// 1. Move the robot the distance of the starSize variable
 
 		// 3. Turn the robot 144 degrees
