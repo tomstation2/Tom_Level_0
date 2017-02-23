@@ -66,6 +66,9 @@ if(Tortoise.getX()==434&&Tortoise.getY()==104){
 if(Tortoise.getX()==215&&Tortoise.getY()==151){
 	JOptionPane.showMessageDialog(null, "Go to the nose, then the eye. You will have reached your destination.");
 }
+if(Tortoise.getX()==140&&Tortoise.getY()==40){
+	JOptionPane.showMessageDialog(null, "You have reached your destination, good job!");
+}
 	}
 
 	private void go() {
