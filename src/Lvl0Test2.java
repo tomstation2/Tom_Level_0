@@ -11,7 +11,7 @@ public class Lvl0Test2 {
 	public static void main(String[] args) {
 		String x = JOptionPane.showInputDialog("How old are you?");
 		int y = Integer.parseInt(x);
-		JOptionPane.showMessageDialog(null, "You are born in " + (2017 - y) + ".");
+		JOptionPane.showMessageDialog(null, "You were born in " + (2017 - y) + ".");
 		if (y >= 30) {
 			JOptionPane.showMessageDialog(null, "You are too old to play this game.");
 		}
