@@ -54,6 +54,7 @@ public class PhotoQuiz {
 		} else {
 			System.out.println("Incorrect");
 		}
+		quizWindow.remove(image2);
 	}
 
 	private static Component createImage(String imageUrl) throws MalformedURLException {
